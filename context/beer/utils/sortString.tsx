@@ -1,9 +1,9 @@
 import { IBeer } from "../../../types/beer";
 
-export const sortString = (prevState: IBeer[]) => {
+export const sortString = (prevState: IBeer[], value: keyof IBeer = "name") => {
 	return prevState.sort((a, b) => {
-		const aName = a.name.toLocaleLowerCase();
-		const bName = b.name.toLocaleLowerCase();
+		const aName = a[value];
+		const bName = b[value];
 		if (aName < bName) {
 			return -1;
 		}

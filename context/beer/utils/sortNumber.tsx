@@ -1,5 +1,5 @@
 import { IBeer } from "../../../types/beer";
 
-export const sortNumber = (prevState: IBeer[]) => {
-	return prevState.sort((a, b) => a.abv - b.abv);
+export const sortNumber = (prevState: IBeer[], value: keyof IBeer = "abv") => {
+	return prevState.sort((a, b) => Number(a[value]) - Number(b[value]));
 };
