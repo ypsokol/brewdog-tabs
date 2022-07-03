@@ -1,6 +1,6 @@
 {
-	"name": "brewdog-pixelteh",
-	"description": "Test app for pixelteh",
+	"name": "brewdog-tabs",
+	"description": "Test app using beer api",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
